@@ -1,23 +1,24 @@
 # Your Code Here
-def my_own_map(source_array)
+def my_own_map(s)
   new = []
   i = 0
   n = s.length
   puts "s has length #{n}"
-  while i < n do
+  while i < n
     puts "i = #{i}"
-    e = source_array[i]
-    puts "Yield #{e} to the block"
+    e = s[i]
+    puts "  Yield #{e} to the block"
     rv = yield(e)
-    new.push( rv )
-    puts "new now equals #{new}"
+    puts "  The block's return value is #{rv}. Push #{rv} onto new"
+    new.push(rv)
+    puts "  new now equals #{new}"
     i += 1
   end
-  puts "Return the value of new"
-  return new
+  puts "We now return the value of new"
+  new
 end
  
-my_own_map(source_array){ |n| n * -1}
+my_own_map(s){ |n| n * -1}
 
 #new.push( source_array[i] * -1 )
 #new.push( source_array[i] )
