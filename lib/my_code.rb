@@ -1,5 +1,5 @@
 # Your Code Here
-def my_own_map(source_array)
+def map(s)
   new = []
   i = 0
   while i < s.length
