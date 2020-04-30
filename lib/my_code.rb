@@ -3,7 +3,8 @@ def my_own_map(source_array)
   new = []
   i = 0
   while i < source_array.length do
-    new.push( source_array[i] yield)
+    oper = yield
+    new.push( source_array[i] * oper)
     i += 1
   end
   return new
