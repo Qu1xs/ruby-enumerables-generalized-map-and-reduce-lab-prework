@@ -1,8 +1,8 @@
 # Your Code Here
-def my_own_map(s)
+def my_own_map(source_array)
   new = []
   i = 0
-  n = s.length
+  n = source_array.length
   puts "s has length #{n}"
   while i < n
     puts "i = #{i}"
@@ -18,7 +18,7 @@ def my_own_map(s)
   new
 end
  
-my_own_map(s){ |n| n * -1}
+my_own_map(source_array){ |n| n * -1}
 
 #new.push( source_array[i] * -1 )
 #new.push( source_array[i] )
