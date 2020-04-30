@@ -10,7 +10,7 @@ def my_own_map(source_array)
   return new
 end
  
-my_own_map(ary){|n| n * -1}
+my_own_map(){|n| n * -1}
 
 #new.push( source_array[i] * -1 )
 #new.push( source_array[i] )
