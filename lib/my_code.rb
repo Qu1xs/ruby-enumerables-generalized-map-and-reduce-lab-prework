@@ -1,18 +1,15 @@
 # Your Code Here
-def map(s)
+def my_own_map(source_array)
   new = []
   i = 0
-  while i < s.length
-    new.push(yield(s[i]))
+  while i < source_array.length
+    new.push(yield(source_array[i]))
     i += 1
   end
   new
 end
 
-#new.push( source_array[i] * -1 )
-#new.push( source_array[i] )
-#new.push( source_array[i] * 2 )
-#new.push( source_array[i] * source_array[i] )
+
 =begin
 def my_own_reduce(source_array)
   new = []
