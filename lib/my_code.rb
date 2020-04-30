@@ -10,8 +10,7 @@ def map(source_array)
 end
 
 
-=begin
-def my_own_reduce(source_array)
+def reduce(source_array)
   new = []
   i = 0
   while i < source_array.length do
@@ -64,4 +63,3 @@ def reduce_to_any_true(source_array)
   end
   return new
 end
-=end
