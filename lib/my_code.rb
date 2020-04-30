@@ -2,11 +2,18 @@
 def my_own_map(source_array)
   new = []
   i = 0
-  while i < source_array.length do
-    yield
-    new.push( source_array[i] * ary)
+  n = s.length
+  puts "s has length #{n}"
+  while i < n do
+    puts "i = #{i}"
+    e = source_array[i]
+    puts "Yield #{e} to the block"
+    rv = yield(e)
+    new.push( rv )
+    puts "new now equals #{new}"
     i += 1
   end
+  puts "Return the value of new"
   return new
 end
  
