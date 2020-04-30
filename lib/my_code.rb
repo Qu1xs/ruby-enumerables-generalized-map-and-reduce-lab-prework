@@ -1,5 +1,5 @@
 # Your Code Here
-def map(s)
+def my_own_map(s)
   new = []
   i = 0
   while i < s.length
@@ -9,7 +9,7 @@ def map(s)
   new
 end
  
-map(s){ |n| n * -1}
+my_own_map(s){ |n| n * -1}
 
 #new.push( source_array[i] * -1 )
 #new.push( source_array[i] )
