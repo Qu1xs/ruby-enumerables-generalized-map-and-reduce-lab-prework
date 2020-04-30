@@ -14,8 +14,8 @@ def reduce(source_array)
   new = []
   i = 0
   while i < source_array.length do
-    if yield
-      return false
+    if yield(source_array[i])
+      return yield
     end
     i += 1
   end
