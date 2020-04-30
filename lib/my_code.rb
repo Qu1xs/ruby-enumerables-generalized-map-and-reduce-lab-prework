@@ -4,13 +4,13 @@ def my_own_map(source_array)
   i = 0
   while i < source_array.length do
     yield
-    new.push( source_array[i] * oper)
+    new.push( source_array[i] * ary)
     i += 1
   end
   return new
 end
  
-my_own_map(){|n| n * -1}
+my_own_map(ary){|n| n * -1}
 
 #new.push( source_array[i] * -1 )
 #new.push( source_array[i] )
